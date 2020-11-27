@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[purple]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+\usepackage[unicode]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\firstname{Aleksandr}
+\familyname{Kiriushin}
+\address{}{Limassol, Cyprus}
+\email{ak@everalerta.com}
+\phone[mobile]{+357 95 168 929}
+\photo[64pt][0.4pt]{avatar.jpeg}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Experience}
+\cventry
+  {Dec 2019 - Present}
+  {Software developer}
+  {GA Tech Global, Limassol, Cyprus}
+  {\newline{}\url{https://gatech.global}}{}
+  {
+    • Python, asyncio/aiohttp, Docker, Kubernetes, GCP, GRPC, Agile Methodologies, JIRA\newline{}
+    • payment systems integration\newline{}
+    • develop unified API for merchants\newline{}
+    • develop core microservices
+  }
+\cventry
+  {Feb 2019 - Dec 2019}
+  {Software developer}
+  {ivi.ru, Moscow, Russia Federation}
+  {\newline{}\url{https://ivi.ru}}{}
+  {
+    • Python, Django, jQuery, Go, SQL, Agile Methodologies, JIRA\newline{}
+    • internal platform for managing content for online cinema\newline{}
+    • video encoder based on ffmpeg + Django\newline{}
+    • video encoding and streaming theory
+   }
+\cventry
+  {Apr 2017 - Feb 2019}
+  {Software developer}
+  {CDNvideo, Moscow, Russian Federation}
+  {\newline{}\url{https://cdnvideo.ru}}{}
+  {
+    • Python for backend services and Vue for frontend, Go for some microservices\newline{}
+    • live streaming service based on auto-configurable CDN platform\newline{}
+    • lead a small team of developers\newline{}
+    • develop CDN API
+   }
+\cventry
+  {Nov 2015 - Nov 2016}
+  {Software developer}
+  {Semnotec, Moscow, Russian Federation}
+  {\newline{}\url{https://semnotec.ru}}{}
+  {
+    • Python, RabbitMQ, Aerospike, JS\newline{}
+    • website classification using machine learning\newline{}
+    • integrations with social network APIs (Twitter, VK, LiveJournal)\newline{}
+    • social graph visualization
+   }
+
+\section{Technical Skills}
+\cvline
+  {Languages}{Python, Bash, Go, SQL, Javascript, C}
+\cvline
+  {Technologies}{PostgreSQL, Redis, RabbitMQ, Asyncio, Aiohttp, Pytest,
+    Docker, Grafana, Prometheus, Kubernetes, Loki, GRPC}
+
+\section{Education}
+  \subsection{University}
+  \cventry
+    {Sep 2010 - June 2018}
+    {Applied Mathematics (DCAM), Bachelor}
+    {Moscow Institute of Physics and Technology (State University) (MIPT)}
+    {}{}{}
+
+\end{document}
