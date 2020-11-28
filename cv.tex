@@ -18,51 +18,70 @@
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
+\nopagenumbers{}
 
 \begin{document}
 \maketitle
+\vspace*{-5mm}
 
 \section{Experience}
   \cventry
     {Dec 2019 – Present}
-    {Software developer}
+    {Senior Software developer (backend and integrations)}
     {GA Tech Global, Limassol, Cyprus}
     {\url{https://gatech.global}}
     {}
     {
       \begin{itemize}\setlength\itemindent{6pt}
-        \item Python, asyncio/aiohttp, Docker, Kubernetes, GCP, GRPC
-        \item payment systems integration
-        \item develop unified API for merchants
-        \item develop core microservices
+        \item Develop microservices for payment systems integrations
+        \item Proactively perform developer on duty tasks on regular basis
+        \item Create a core microservice for balance alerting (Slack + Google Drive API)
+        \item Take care of team's kubernetes dev namespace
+        \item Make a Miro map of dev payment channels
       \end{itemize}
     }
+
   \cventry
     {Feb 2019 – Dec 2019}
-    {Software developer}
+    {Software developer (Encoder backend)}
     {ivi.ru, Moscow, Russia}
     {\url{https://ivi.ru}}
     {}
     {
       \begin{itemize}\setlength\itemindent{6pt}
-        \item Python, Django, jQuery, Go, SQL
-        \item internal platform for managing content for online cinema
-        \item video encoder based on ffmpeg + Django
-        \item video encoding and streaming theory
+        \item Mantain and enhance internal platform for managing content for online cinema (Django)
+        \item Bug fixing for video encoder based on ffmpeg + Django
+        \item Create a new version of Quality Control pipeline
+        \item Perform a lot of migrations and analytical requests using SQL
       \end{itemize}
     }
 
   \cventry
-    {Apr 2017 – Feb 2019}
-    {Software developer}
+    {Aug 2018 – Feb 2019}
+    {Software developer (Live streaming backend)}
     {CDNvideo, Moscow, Russia}
     {\url{https://cdnvideo.ru}}
     {}
     {
       \begin{itemize}\setlength\itemindent{6pt}
-        \item Python for backend services and Vue for frontend, Go for some microservices
-        \item live streaming service based on auto-configurable CDN platform
-        \item lead a small team of developers
+        \item Make a backend for autoconfigurable live streaming service
+        \item Lead a team of 2 backend developers
+        \item Learn Go and rewrite statistics service from Perl with 2 time speedup
+      \end{itemize}
+    }
+
+  \cventry
+    {Apr 2017 – Aug 2018}
+    {Junior Software developer (CDN backend)}
+    {CDNvideo, Moscow, Russia}
+    {\url{https://cdnvideo.ru}}
+    {}
+    {
+      \begin{itemize}\setlength\itemindent{6pt}
+        \item Develop backend services for autoconfigurable CDN
+        \item Learn Vue.js and tune dashboard
+        \item Rewrite cache API from Perl to Python
+        \item Develop task distribution service for cache API
       \end{itemize}
     }
 
@@ -74,8 +93,9 @@
     {}
     {
       \begin{itemize}\setlength\itemindent{6pt}
-        \item Python, RabbitMQ, Aerospike, JS
-        \item integrations with social network APIs (Twitter, VK, LiveJournal)
+        \item Develop drivers for social network APIs integrations (Twitter, VK, LiveJournal)
+        \item Improve backend for data collection using Python, RabbitMQ, Aerospike, JS
+        \item Migrate codebase from Python2 to Python3
       \end{itemize}
     }
 
@@ -103,6 +123,7 @@
     }
 
 \section{Education}
+  \vspace*{-5mm}
   \cventry
     {2010 – 2018}
     {\includegraphics[scale=0.5]{mipt-en-blue} Moscow Institute of Physics and Technology}
