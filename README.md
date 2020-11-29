@@ -18,3 +18,10 @@ make view
 # Tailoring process
 
 The process of tailoring is based on advices from ["The Tech Resume Inside Out"](https://thetechresume.com/) book.
+
+<div style="display: flex">
+<h3>v2</h3>
+<img src="assets/cv_v2.png" alt="v1">
+<h3>v1</h3>
+<img src="assets/cv_v1.png" >
+</div>
