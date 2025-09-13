@@ -1,138 +1,93 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[10pt,a4paper,ragged2e]{altacv}
 
-\moderncvtheme[black]{banking}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
 
-\usepackage[unicode]{hyperref}
-\usepackage{graphicx}
-\definecolor{linkcolour}{rgb}{0,0.0,0.0}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolor}
+\geometry{bottom=1.5cm,left=1.5cm,right=2.5cm}
 
-\firstname{Aleksandr}
-\familyname{Kiriushin}
-\address{}{Limassol, Cyprus}
-\email{ak@everalerta.com}
-\phone[mobile]{+357 95 168 929}
+\definecolor{Blue}{HTML}{1F4E79}
+\definecolor{LightBlue}{HTML}{E6F0FA}
 
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
-\nopagenumbers{}
+\colorlet{tagline}{olive}
+\colorlet{heading}{olive}
+\colorlet{accent}{Blue}
+\colorlet{emphasis}{Blue}
+\colorlet{body}{black}
+
+\name{Aleksandr Kiriushin}{}
+\tagline{Senior Software Engineer}
+\personalinfo{
+  \email{ak@everalerta.com}
+  \phone{+46 76 109 9514}
+  \location{Knivsta, Sweden}
+  \linkedin{ak-everalerta}
+}
+
 
 \begin{document}
-\maketitle
-\vspace*{-5mm}
+\makecvheader
 
-\section{Experience}
-  \cventry
-    {Dec 2019 – Present}
-    {Senior Software developer (backend and integrations)}
-    {GA Tech Global, Limassol, Cyprus}
-    {\url{gatech.global}}
-    {}
-    {
-      \begin{itemize}\setlength\itemindent{6pt}
-        \item Develop microservices for payment systems integrations
-        \item Proactively perform developer on-duty tasks regularly
-        \item Create a core microservice for balance alerting (Slack + Google Drive API)
-        \item Take care of team's Kubernetes dev namespace
-        \item Make a Miro map of dev payment channels
-      \end{itemize}
-    }
+\cvsection{Experience}
 
-  \cventry
-    {Feb 2019 – Dec 2019}
-    {Software developer (Encoder backend)}
-    {ivi.ru, Moscow, Russia}
-    {\url{ivi.ru}}
-    {}
-    {
-      \begin{itemize}\setlength\itemindent{6pt}
-        \item Maintain and enhance the internal platform for managing content for online cinema (Django)
-        \item Bug fixing for video encoder based on Ffmpeg + Django
-        \item Create a new version of the Quality Control pipeline
-        \item Perform a lot of migrations and analytical requests using SQL
-      \end{itemize}
-    }
+\cvevent{Senior Software Engineer (Bank \& BNPL - Platform Engineer, SRE, DevOps, Backend)}{Klarna, Stockholm, Sweden}{Apr 2021 -- Present}{}
+\begin{itemize}
+  \item Design, develop and maintain Klarna CI platform using Go, Kubernetes and AWS cloud.
+  \item Develop compliance service in Python to secure production deployments.
+  \item Actively participating in On Call duty, Datadog monitoring and alerts setup and internal support channel.
+\end{itemize}
 
-  \cventry
-    {Aug 2018 – Feb 2019}
-    {Software developer (Live streaming backend)}
-    {CDNvideo, Moscow, Russia}
-    {\url{cdnvideo.com}}
-    {}
-    {
-      \begin{itemize}\setlength\itemindent{6pt}
-        \item Make a backend for auto configurable live streaming service
-        \item Lead a team of 2 backend developers
-        \item Learn Go and rewrite statistics service from Perl with 2-time speedup
-      \end{itemize}
-    }
+\divider
 
-  \cventry
-    {Apr 2017 – Aug 2018}
-    {Junior Software developer (CDN backend)}
-    {CDNvideo, Moscow, Russia}
-    {\url{cdnvideo.com}}
-    {}
-    {
-      \begin{itemize}\setlength\itemindent{6pt}
-        \item Develop backend services for auto configurable CDN
-        \item Rewrite cache API from Perl to Python
-        \item Develop task distribution service for cache API
-        \item Learn Vue.js and tune dashboard
-      \end{itemize}
-    }
+\cvevent{Senior Software Engineer (Payment Gateway - Backend \& Integrations)}{GA Tech Global, Limassol, Cyprus}{Dec 2019 -- Apr 2021}{}
+\begin{itemize}
+  \item Developed microservices for payment system integrations (Python).
+  \item Built core balance alerting service (Slack + Google Drive API).
+\end{itemize}
 
-  \cventry
-    {Nov 2015 – Nov 2016}
-    {Junior Software Developer (backend, frontend, ML)}
-    {Semnotec, Moscow, Russia}
-    {\url{semnotec.ru}}
-    {}
-    {
-      \begin{itemize}\setlength\itemindent{6pt}
-        \item Develop drivers for social network APIs integrations (Twitter, VK, LiveJournal)
-        \item Improve backend for data collection using Python, RabbitMQ, Aerospike
-        \item Migrate codebase from Python2 to Python3
-      \end{itemize}
-    }
+\divider
 
-\section{Technical Skills}
-  \cvline
-    {Languages}{
-      Python,
-      SQL,
-      Go,
-      JavaScript
-    }
-  \cvline
-    {Technologies}{
-      Asyncio/Aiohttp,
-      Docker,
-      Kubernetes,
-      Linux,
-      PostgreSQL,
-      Redis,
-      RabbitMQ,
-      Grafana,
-      Prometheus,
-      GRPC,
-      Nginx
-    }
+\cvevent{Software Engineer (Online Cinema - Encoder Backend)}{ivi.ru, Moscow, Russia}{Feb 2019 -- Dec 2019}{}
+\begin{itemize}
+  \item Maintained and enhanced content management platform (Django).
+  \item Improved video encoder pipeline (Ffmpeg + Django) and Quality Control automation.
+  \item Wrote SQL migrations and optimized analytical queries.
+\end{itemize}
 
-\section{Education}
-  \vspace*{-5mm}
-  \cventry
-    {2010 – 2018}
-    {\includegraphics[scale=0.25]{assets/mipt} Moscow Institute of Physics and Technology}
-    {}
-    {}{}
-    {
-      Department of Control and Applied Mathematics \newline{}
-      Bachelor of Applied Mathematics and Physics \newline{}
-    }
-    {}
+\divider
+
+\cvevent{Software Engineer (CDN - Live Streaming Backend)}{CDNvideo, Moscow, Russia}{Apr 2017 -- Feb 2019}{}
+\begin{itemize}
+  \item Built backend for auto-configurable live streaming service.
+  \item Led a team of 2 backend developers.
+  \item Rewrote statistics service from Perl to Go with 2x performance improvement.
+\end{itemize}
+
+\divider
+
+\cvevent{Junior Software Engineer (Startup - Backend, Frontend, Machine Learning)}{Semnotec, Moscow, Russia}{Nov 2015 -- Nov 2016}{}
+\begin{itemize}
+  \item Built integrations with multiple social networks and data collection backend.
+  \item Built React JS dashboard to diplay data.
+  \item Implemented a machine learning algorithm to classify websites by text.
+\end{itemize}
+
+\cvsection{Technical Skills}
+
+\cvtag{Go}
+\cvtag{Python}
+\cvtag{SQL}
+\cvtag{AWS}
+\cvtag{Kubernetes}
+\cvtag{Docker}
+\cvtag{Terraform}
+\cvtag{Datadog}
+\cvtag{Grafana}
+\cvtag{Linux}
+
+\cvsection{Education}
+
+\cvevent{B.Sc. Applied Mathematics \& Physics}{MIPT - Moscow Institute of Physics and Technology}{2010 -- 2018 (almost M.Sc.)}{}
+Department of Control and Applied Mathematics
 
 \end{document}

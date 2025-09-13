@@ -1,7 +1,7 @@
 # CV
 This is a source code for compiling my CV.
 
-CV's template is [moderncv](https://github.com/xdanaux/moderncv).
+CV's template is [altacv](https://github.com/liantze/AltaCV).
 
 # How to make a pdf
 
@@ -20,8 +20,5 @@ make view
 The process of tailoring is based on advices from ["The Tech Resume Inside Out"](https://thetechresume.com/) book.
 
 <div style="display: flex">
-<h3>v2</h3>
-<img src="assets/cv_v2.png" alt="v1">
-<h3>v1</h3>
-<img src="assets/cv_v1.png" >
+<img src="assets/cv.png" alt="v1">
 </div>
